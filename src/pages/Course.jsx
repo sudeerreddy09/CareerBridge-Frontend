@@ -262,7 +262,7 @@ function Course() {
     const user = JSON.parse(storedUser);
 
     fetch(
-      `http://localhost:8080/api/course-progress/user/${user.id}/course/${id}`
+      `https://careerbridge-backend-rw9x.onrender.com/api/course-progress/user/${user.id}/course/${id}`
     )
       .then((response) => {
         if (response.status === 404) {
@@ -302,7 +302,7 @@ function Course() {
 
     const user = JSON.parse(storedUser);
 
-    fetch("http://localhost:8080/api/course-progress/save", {
+    fetch("https://careerbridge-backend-rw9x.onrender.com/api/course-progress/save", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

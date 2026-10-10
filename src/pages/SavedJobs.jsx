@@ -146,7 +146,7 @@ function SavedJobs() {
         setLoading(true);
 
         const response = await fetch(
-          `http://localhost:8080/api/saved-jobs/user/${userId}`
+          `https://careerbridge-backend-rw9x.onrender.com/api/saved-jobs/user/${userId}`
         );
 
         if (!response.ok) {
@@ -212,7 +212,7 @@ function SavedJobs() {
       setRemovingJobId(jobId);
 
       const response = await fetch(
-        `http://localhost:8080/api/saved-jobs/user/${userId}/job/${jobId}`,
+        `https://careerbridge-backend-rw9x.onrender.com/api/saved-jobs/user/${userId}/job/${jobId}`,
         {
           method: "DELETE",
         }

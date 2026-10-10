@@ -20,7 +20,7 @@ function Notifications() {
     setUser(parsedUser);
 
     fetch(
-      `http://localhost:8080/api/notifications/user/${parsedUser.id}`
+      `https://careerbridge-backend-rw9x.onrender.com/api/notifications/user/${parsedUser.id}`
     )
       .then((response) => {
         if (!response.ok) {
@@ -50,7 +50,7 @@ function Notifications() {
   const markAsRead = async (notificationId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/notifications/${notificationId}/read`,
+        `https://careerbridge-backend-rw9x.onrender.com/api/notifications/${notificationId}/read`,
         {
           method: "PUT",
         }
@@ -84,7 +84,7 @@ function Notifications() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/notifications/user/${user.id}/read-all`,
+        `https://careerbridge-backend-rw9x.onrender.com/api/notifications/user/${user.id}/read-all`,
         {
           method: "PUT",
         }
@@ -112,7 +112,7 @@ function Notifications() {
   const deleteNotification = async (notificationId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/notifications/${notificationId}`,
+        `https://careerbridge-backend-rw9x.onrender.com/api/notifications/${notificationId}`,
         {
           method: "DELETE",
         }

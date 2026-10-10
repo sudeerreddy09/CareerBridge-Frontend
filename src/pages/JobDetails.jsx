@@ -242,7 +242,7 @@ function JobDetails() {
         // ------------------------------
 
         const savedResponse = await fetch(
-          `http://localhost:8080/api/saved-jobs/user/${userId}`
+          `https://careerbridge-backend-rw9x.onrender.com/api/saved-jobs/user/${userId}`
         );
 
         if (savedResponse.ok) {
@@ -263,7 +263,7 @@ function JobDetails() {
 
         const applicationResponse =
           await fetch(
-            `http://localhost:8080/api/applications/user/${userId}/job/${job.id}`
+            `https://careerbridge-backend-rw9x.onrender.com/api/applications/user/${userId}/job/${job.id}`
           );
 
         if (applicationResponse.ok) {
@@ -300,7 +300,7 @@ function JobDetails() {
     try {
       if (isSaved) {
         const response = await fetch(
-          `http://localhost:8080/api/saved-jobs/user/${userId}/job/${job.id}`,
+          `https://careerbridge-backend-rw9x.onrender.com/api/saved-jobs/user/${userId}/job/${job.id}`,
           {
             method: "DELETE",
           }
@@ -319,7 +319,7 @@ function JobDetails() {
         );
       } else {
         const response = await fetch(
-          "http://localhost:8080/api/saved-jobs/save",
+          "https://careerbridge-backend-rw9x.onrender.com/api/saved-jobs/save",
           {
             method: "POST",
             headers: {
@@ -382,7 +382,7 @@ function JobDetails() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/applications/apply",
+        "https://careerbridge-backend-rw9x.onrender.com/api/applications/apply",
         {
           method: "POST",
           headers: {

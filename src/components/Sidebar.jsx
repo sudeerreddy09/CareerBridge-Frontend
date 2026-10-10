@@ -21,7 +21,7 @@ function Sidebar() {
         const user = JSON.parse(storedUser);
 
         const response = await fetch(
-          `http://localhost:8080/api/notifications/user/${user.id}/unread-count`
+          `https://careerbridge-backend-rw9x.onrender.com/api/notifications/user/${user.id}/unread-count`
         );
 
         if (!response.ok) {

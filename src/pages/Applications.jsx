@@ -138,7 +138,7 @@ function Applications() {
   const loadApplications = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/applications/user/${userId}`
+        `https://careerbridge-backend-rw9x.onrender.com/api/applications/user/${userId}`
       );
 
       if (!response.ok) {
@@ -214,7 +214,7 @@ function Applications() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/applications/${applicationId}/status?status=${newStatus}`,
+        `https://careerbridge-backend-rw9x.onrender.com/api/applications/${applicationId}/status?status=${newStatus}`,
         {
           method: "PUT",
         }

@@ -40,7 +40,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/users/register",
+        "https://careerbridge-backend-rw9x.onrender.com/api/users/register",
         {
           method: "POST",
           headers: {

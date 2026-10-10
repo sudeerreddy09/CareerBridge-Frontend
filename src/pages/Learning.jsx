@@ -162,7 +162,7 @@ function Learning() {
         }
 
         const response = await fetch(
-          `http://localhost:8080/api/assessment/user/${user.id}`
+          `https://careerbridge-backend-rw9x.onrender.com/api/assessment/user/${user.id}`
         );
 
         if (response.ok) {
@@ -209,7 +209,7 @@ function Learning() {
         for (const course of courses) {
           try {
             const response = await fetch(
-              `http://localhost:8080/api/course-progress/user/${user.id}/course/${course.id}`
+              `https://careerbridge-backend-rw9x.onrender.com/api/course-progress/user/${user.id}/course/${course.id}`
             );
 
             if (response.ok) {

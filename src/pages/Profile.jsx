@@ -54,7 +54,7 @@ function Profile() {
   const loadProfile = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:8080/api/profile/user/${userId}`
+        `https://careerbridge-backend-rw9x.onrender.com/api/profile/user/${userId}`
       );
 
       if (response.ok) {
@@ -132,7 +132,7 @@ function Profile() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/profile/save",
+        "https://careerbridge-backend-rw9x.onrender.com/api/profile/save",
         {
           method: "POST",
           headers: {

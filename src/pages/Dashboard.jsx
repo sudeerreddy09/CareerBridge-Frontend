@@ -254,7 +254,7 @@ function Dashboard() {
 
       try {
         const response = await fetch(
-          `http://localhost:8080/api/assessment/user/${user.id}`
+          `https://careerbridge-backend-rw9x.onrender.com/api/assessment/user/${user.id}`
         );
 
         if (response.ok) {
@@ -294,7 +294,7 @@ function Dashboard() {
           courseId++
         ) {
           const response = await fetch(
-            `http://localhost:8080/api/course-progress/user/${user.id}/course/${courseId}`
+            `https://careerbridge-backend-rw9x.onrender.com/api/course-progress/user/${user.id}/course/${courseId}`
           );
 
           if (response.ok) {
@@ -334,7 +334,7 @@ function Dashboard() {
 
       try {
         const response = await fetch(
-          `http://localhost:8080/api/notifications/user/${user.id}/unread-count`
+          `https://careerbridge-backend-rw9x.onrender.com/api/notifications/user/${user.id}/unread-count`
         );
 
         if (!response.ok) {

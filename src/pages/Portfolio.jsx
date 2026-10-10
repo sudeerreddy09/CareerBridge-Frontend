@@ -68,7 +68,7 @@ function Portfolio() {
 
         const profileResponse =
           await fetch(
-            `http://localhost:8080/api/profile/user/${user.id}`
+            `https://careerbridge-backend-rw9x.onrender.com/api/profile/user/${user.id}`
           );
 
         if (profileResponse.ok) {
@@ -95,7 +95,7 @@ function Portfolio() {
 
         const portfolioResponse =
           await fetch(
-            `http://localhost:8080/api/portfolio/user/${user.id}`
+            `https://careerbridge-backend-rw9x.onrender.com/api/portfolio/user/${user.id}`
           );
 
         if (portfolioResponse.ok) {
@@ -124,7 +124,7 @@ function Portfolio() {
 
         const assessmentResponse =
           await fetch(
-            `http://localhost:8080/api/assessment/user/${user.id}`
+            `https://careerbridge-backend-rw9x.onrender.com/api/assessment/user/${user.id}`
           );
 
         if (assessmentResponse.ok) {
@@ -149,7 +149,7 @@ function Portfolio() {
         ) {
           const response =
             await fetch(
-              `http://localhost:8080/api/course-progress/user/${user.id}/course/${courseId}`
+              `https://careerbridge-backend-rw9x.onrender.com/api/course-progress/user/${user.id}/course/${courseId}`
             );
 
           if (response.ok) {
@@ -267,7 +267,7 @@ function Portfolio() {
     try {
       const response =
         await fetch(
-          "http://localhost:8080/api/portfolio/save",
+          "https://careerbridge-backend-rw9x.onrender.com/api/portfolio/save",
           {
             method: "POST",
 

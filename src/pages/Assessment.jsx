@@ -233,7 +233,7 @@ function Assessment() {
       }
 
       const response = await fetch(
-        "http://localhost:8080/api/assessment/save",
+        "https://careerbridge-backend-rw9x.onrender.com/api/assessment/save",
         {
           method: "POST",
           headers: {
